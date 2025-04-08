@@ -1,4 +1,18 @@
-# plonky2-sha256
+## Benchmarking SHA256 with Plonky2
+
+```
+cargo bench
+```
+
+## Measuring disk and RAM space reqiuirements
+
+```
+cargo run --bin measure --release
+```
+
+# Original Readme
+
+## plonky2-sha256
 
 This repository contains [SNARK](https://en.wikipedia.org/wiki/Non-interactive_zero-knowledge_proof) circuits of a
 cryptographic hash function [SHA-256](https://en.wikipedia.org/wiki/SHA-2) implemented
