@@ -16,6 +16,8 @@ env_logger = "0.10.0"
 rand = "0.8.4"
 plonky2_u32 = { git = "https://github.com/alxkzmn/plonky2-u32", branch= "sha-256" }
 criterion = "0.5.1"
+libc = "0.2.171"
+mach2 = "0.4.2"
 
 [profile.release]
 opt-level = 3
@@ -29,3 +31,7 @@ opt-level = 1
 [[bench]]
 name = "prove_verify"
 harness = false
+
+[[bin]]
+name = "measure"
+path = "src/bin/measure.rs"
