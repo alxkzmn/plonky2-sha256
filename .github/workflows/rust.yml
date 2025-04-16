@@ -12,7 +12,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: Install Rust toolchain
         uses: actions-rs/toolchain@v1
-
+        with:
+          toolchain: nightly-2025-02-20
+          override: true
       - name: Run memory measurements
         run: |
           cargo run --bin measure --release
