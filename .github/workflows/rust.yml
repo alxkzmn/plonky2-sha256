@@ -1,6 +1,9 @@
 name: Rust CI
 
-on: workflow_dispatch
+on:
+  push:
+    branches:
+      - jemalloc
 
 jobs:
   measure:
