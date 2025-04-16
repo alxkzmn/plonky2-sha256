@@ -16,8 +16,9 @@ env_logger = "0.10.0"
 rand = "0.8.4"
 plonky2_u32 = { git = "https://github.com/alxkzmn/plonky2-u32", branch= "sha-256" }
 criterion = "0.5.1"
-jemalloc-ctl = "0.5.4"
-jemallocator = "0.5.4"
+tikv-jemalloc-ctl = "0.5.4"
+tikv-jemallocator = {version="0.5.4", features=["stats", "disable_initial_exec_tls"]}
+memory-stats = "1.2.0"
 
 [profile.release]
 opt-level = 3
